@@ -19,6 +19,11 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+:root {
+  --primary-color: #21497e;
+  --second-color: #e41c6f;
+}
 /* End of Reset & Common Styles */
 
 /* Section 1 */
@@ -38,12 +43,12 @@ html {
   font-size: 6rem;
   font-weight: 700;
   color: #fff;
-  background-color: #e41c6f;
+  background-color: var(--primary-color);
   padding: 0 3rem;
   margin-bottom: 5rem;
   text-transform: uppercase;
   letter-spacing: 1rem;
-  border-bottom: 0.3rem solid #fff;
+  border-bottom: 0.3rem solid var(--second-color);
   text-shadow: 0.2rem 0.2rem 1rem #555;
   transform: skew(-10deg);
 }
@@ -53,7 +58,7 @@ html {
   height: 25rem;
   object-fit: cover;
   border-radius: 50%;
-  border: 0.7rem dotted #e41c6f;
+  border: 0.7rem dotted var(--second-color);
   background-color: rgba(255, 255, 255, 0.7);
   padding: 0.5rem;
   opacity: 0.9;
@@ -62,7 +67,7 @@ html {
 .person-name {
   font-size: 2rem;
   color: #fff;
-  background-color: #e41c6f;
+  background-color: var(--primary-color);
   margin: 5rem 0;
   padding: 0.5rem 3rem;
   letter-spacing: 0.3rem;
@@ -85,7 +90,7 @@ html {
 .navbar {
   width: 100%;
   height: 4rem;
-  background-color: #e41c6f;
+  background-color: var(--second-color);
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
